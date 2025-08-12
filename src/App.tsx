@@ -32,6 +32,7 @@ function App() {
   //useEffect to call api to fetch data
   useEffect(() => {
     async function getWeather() {
+    
       setLoading(true);
       setErrorMsg(null);
       const minTimer = new Promise((resolve) => setTimeout(resolve, 500));

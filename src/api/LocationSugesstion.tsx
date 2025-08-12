@@ -7,7 +7,8 @@ const fetchCitySuggestions = async (query: string) => {
   //if there is no query or query is less than 2 characters then no suggestion will be fetched
 
   try {
-    const apiKey = "806e71ca2ec092cc42be12e4db5359d9";
+    const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY;
+    console.log("API Key:", apiKey);
     const url = `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(query)}&limit=5&appid=${apiKey}`;
     const res = await fetch(url);
 

@@ -1,7 +1,8 @@
 import type { ForecastListItem } from "../types/Weather";
 
 export async function fetchWeatherFromAPI(city: string) {
-  const apiKey = "806e71ca2ec092cc42be12e4db5359d9";
+const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY;
+console.log("API Key:", apiKey);
   const currentUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
