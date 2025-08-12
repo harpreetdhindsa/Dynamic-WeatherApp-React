@@ -1,0 +1,80 @@
+/* CurrentWeatherValues's styles */
+.feelslike,
+.windgust,
+.grndLevel,
+.humidity,
+.pressure,
+.seaLevel,
+.date,
+.maxtemp,
+.mintemp,
+.feels,
+label {
+  color: var(--primary-color);
+  font-size: clamp(0.8rem, 2vw, 3rem);
+}
+
+/*Labels styles */
+.condition,
+.windgustLabel,
+.feelslikeLabel,
+.grndLevelLabel,
+.humidityLabel,
+.pressureLabel,
+.seaLevelLabel,
+.text,
+.maxlabel,
+.minlabel,
+.feelsL {
+  color: var(--secondary-color);
+  font-size: clamp(0.5rem, 1vw, 1rem);
+}
+
+
+.currentweather {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 15px;
+}
+
+
+.icontemp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  flex-wrap: nowrap;
+  margin-left: 40px;
+}
+
+.icon {
+  width: 10vw;
+  height: 10vw;
+}
+
+.wind {
+  display: flex;
+  gap: 20px;
+  width: 60vw;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-right: 40px;
+  align-items: center;
+}
+
+.gridcolumn {
+  display: grid;
+  gap: 20px;
+  padding: 12px;
+  text-align: left;
+}
+
+.temp {
+  color: var(--primary-color);
+  font-size: clamp(1rem, 5vw, 6rem);
+}
