@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styled from "./header.module.css";
+import styled from "./Header.module.css";
 import type { Location } from "../../types/Weather";
 import fetchCitySuggestions from "../../api/LocationSugesstion";
 
